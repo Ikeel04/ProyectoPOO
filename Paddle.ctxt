@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Paddle
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment1.text=\r\n\ Method\ addedToWorld\:\ adds\ the\ text\ objects\ related\ to\ the\ paddle\ controls\ into\ the\ world\ and\ sets\ the\ initial\ paddle\ control\r\n\r\n\ @param\ world\ the\ world\ this\ paddle\ object\ was\ placed\ in\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Method\ act\:\ controls\ paddle\ movement\ and\ deals\ with\ the\ changing\ of\ paddle\ control\ \r\n
+comment3.params=type
+comment3.target=void\ updateInput(int)
+comment3.text=\r\n\ Method\ updateInput\:\ sets\ the\ control\ for\ the\ paddle\ (keyboard\ input\ or\ mouse\ movement)\r\n\r\n\ @param\ type\ the\ control\ value\ (zero\ (0)\ for\ keyboard\ input;\ one\ (1)\ for\ mouse\ movement)\r\n
+numComments=4

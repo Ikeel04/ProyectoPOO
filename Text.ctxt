@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Text
+comment0.text=\r\n\ Actor\ class\ Text\:\ an\ object\ to\ display\ a\ text\ string\r\n
+comment1.params=text\ size
+comment1.target=Text(java.lang.String,\ int)
+comment2.params=text
+comment2.target=void\ setText(java.lang.String)
+comment2.text=\r\n\ Method\ setText\:\ creates\ the\ image\ with\ the\ given\ text\r\n\r\n\ @param\ text\ the\ text\ string\ for\ the\ image\ to\ display\r\n
+numComments=3

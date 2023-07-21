@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Score
+comment0.text=\r\n\ Actor\ class\ Score\:\ a\ text\ panel\ object\ to\ display\ game\ over\ message\ and\ final\ score\r\n
+comment1.params=finalScore
+comment1.target=Score(int)
+comment1.text=\r\n\ Score\ Constructor\:\ creates\ the\ score\ text\ image\r\n\r\n\ @param\ finalScore\ the\ final\ score\ of\ the\ game\r\n
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment2.text=\r\n\ Method\ addedToWorld\:\ creates\ the\ panel\ and\ draws\ the\ text\ images\ onto\ it\r\n\r\n\ @param\ world\ the\ world\ this\ Score\ object\ was\ placed\ in\r\n
+numComments=3

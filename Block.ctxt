@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Block
+comment0.text=\r\n\ Actor\ class\ Block\:\ an\ object\ for\ the\ ball\ to\ bounce\ off\ of;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ objects\ of\ this\ class\ turn\ 90\ degrees\ every\ time\ the\ ball\ hits\ a\ side\ or\ top\ edge\ of\ the\ world\r\n
+comment1.params=rotated
+comment1.target=Block(boolean)
+comment1.text=\r\n\ Block\ Constructor\:\ sets\ the\ initial\ rotation\ of\ the\ block\ object\r\n\r\n\ @param\ rotated\ a\ flag\ indicating\ whether\ the\ initial\ state\ is\ rotated\ 90\ degrees\ or\ not\r\n
+numComments=2

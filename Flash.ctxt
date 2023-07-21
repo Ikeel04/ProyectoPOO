@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Flash
+comment0.text=\r\n\ Actor\ class\ Flash\:\ an\ object\ to\ make\ other\ objects\ seem\ to\ momentarily\ brighten\r\n
+comment1.params=actorObj
+comment1.target=Flash(greenfoot.Actor)
+comment1.text=\r\n\ Flash\ Constructor\:\ \ creates\ the\ appropriate\ image\ for\ the\ flash\ depending\ on\ the\ shape\ of\ the\ given\ actor\r\n\r\n\ @param\ actorObj\ the\ actor\ that\ this\ flash\ object\ will\ make\ flash\r\n
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment2.text=\r\n\ Method\ addedToWorld\:\ removes\ any\ current\ flash\ objects\ from\ the\ actor\ that\ is\ to\ flash\ (avoids\ compound\ flashing)\r\n\r\n\ @param\ world\ the\ world\ this\ flash\ object\ was\ placed\ in\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Method\ act\:\ performs\ dimming\ and\ disappearing\ of\ the\ flash\ object\r\n
+numComments=4
