@@ -6,9 +6,9 @@ import greenfoot.*;
 public class Arena extends World
 {
     int lives = 3; // the game is over when the third ball is lost
-    Text livesText = new Text("Lives: "+lives, 24); // displays the current lives remaining
+    Text vidasText = new Text("Vidas: "+lives, 24); // displays the current lives remaining
     int score = 0; // each bounce off an object score some points
-    Text scoreText = new Text("Score: "+score, 24); // displays the current score
+    Text puntajeText = new Text("Puntaje: "+score, 24); // displays the current score
     
     /**
      * Arena Constructor:  creates the bumpers, the paddle and the first ball to put in play
@@ -21,10 +21,10 @@ public class Arena extends World
         Greenfoot.setSpeed(53);
         
         // add the text display for current lives remaining
-        addObject(livesText, 60, 600);
+        addObject(vidasText, 60, 600);
         
         // add the text display for current score
-        addObject(scoreText, 330, 600);
+        addObject(puntajeText, 330, 600);
         
         // add four switching blocks
         addObject(new Block(false), 200, 85);
@@ -63,7 +63,7 @@ public class Arena extends World
         if(getObjects(Ball.class).isEmpty())
         { // ball was removed
             lives--; // decrement remaining lives
-            livesText.setText("Lives: "+lives); // update display of remaining lives
+            vidasText.setText("Lives: "+lives); // update display of remaining lives
             if (lives==0)
             { // no lives remaining
                 // add display of final score
@@ -85,6 +85,6 @@ public class Arena extends World
     public void addScore(int amount)
     {
         score += amount; // add change amount to score
-        scoreText.setText("Score: "+score); // update display of current score
+        puntajeText.setText("Score: "+score); // update display of current score
     }
 }

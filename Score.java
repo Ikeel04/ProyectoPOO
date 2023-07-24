@@ -15,7 +15,7 @@ public class Score extends Actor
      */
     public Score(int finalScore)
     {
-        scoreImg = new GreenfootImage("Final Score:\n"+finalScore, 64, Color.WHITE, new Color(0, 0, 0, 0));
+        scoreImg = new GreenfootImage("Puntaje Final:\n"+finalScore, 64, Color.WHITE, new Color(0, 0, 0, 0));
     }
     
     /**

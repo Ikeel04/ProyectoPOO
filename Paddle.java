@@ -3,7 +3,7 @@ import greenfoot.*;
 public class Paddle extends Actor
 {
     // the texts related to the paddle controls
-    String[] texts = { "< keyboard >", "\"m\" for mouse", "< mouse >", "\"k\" for keyboard" };
+    String[] texts = { "< Teclado >", "\"m\" para mouse", "< mouse >", "\"k\" para teclado" };
     
     Text inputText = new Text(" ", 16); // text showing what paddle control is current
     Text altText = new Text(" ", 16); // text showing intruction on how to change paddle control
