@@ -63,7 +63,7 @@ public class Arena extends World
         if(getObjects(Ball.class).isEmpty())
         { // ball was removed
             lives--; // decrement remaining lives
-            vidasText.setText("Lives: "+lives); // update display of remaining lives
+            vidasText.setText("Vidas: "+lives); // update display of remaining lives
             if (lives==0)
             { // no lives remaining
                 // add display of final score
@@ -85,6 +85,6 @@ public class Arena extends World
     public void addScore(int amount)
     {
         score += amount; // add change amount to score
-        puntajeText.setText("Score: "+score); // update display of current score
+        puntajeText.setText("Puntaje: "+score); // update display of current score
     }
 }
