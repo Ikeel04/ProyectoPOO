@@ -87,4 +87,23 @@ public class Arena extends World
         score += amount; // add change amount to score
         puntajeText.setText("Puntaje: "+score); // update display of current score
     }
+    
+    public class Juego extends World {
+
+    public Juego() {
+        super(800, 600, 1);
+        randomizarArena();
+    }
+
+    private void randomizarArena() {
+        int numAleatorio = Greenfoot.getRandomNumber(2); // Genera un número aleatorio entre 0 y 1
+
+        if (numAleatorio == 0) {
+            Greenfoot.setWorld(new Arena()); // Carga la primera arena si el número es 0
+        } else {
+            Greenfoot.setWorld(new Arena2()); // Carga la segunda arena si el número es 1
+        }
+    }
+}
+
 }
