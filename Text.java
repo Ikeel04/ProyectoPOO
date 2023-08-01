@@ -5,8 +5,7 @@ import greenfoot.*;
  */
 public class Text extends Actor
 {
-    int fontSize; // the size of the font to use for this text object
-    
+    int fontSize; // the size of the font to use for this text object  
     public Text(String text, int size)
     {
         fontSize = size; // save the size of the font
@@ -21,5 +20,6 @@ public class Text extends Actor
     public void setText(String text)
     {
         setImage(new GreenfootImage(text, fontSize, Color.BLACK, new Color(0, 0, 0, 0)));
+
     }
 }
