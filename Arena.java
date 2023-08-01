@@ -5,6 +5,7 @@ import greenfoot.*;
  */
 public class Arena extends World
 {
+    GreenfootSound complete = new GreenfootSound("complete.wav");
     int lives = 3; // the game is over when the third ball is lost
     Text vidasText = new Text("Vidas: "+lives, 24); // displays the current lives remaining
     int score = 0; // each bounce off an object score some points
@@ -44,6 +45,7 @@ public class Arena extends World
         
         // add the first moving ball
         addObject(new Ball(), 20, 20);
+              
     }
     
     /**
@@ -63,7 +65,7 @@ public class Arena extends World
         if(getObjects(Ball.class).isEmpty())
         { // ball was removed
             lives--; // decrement remaining lives
-            vidasText.setText("Lives: "+lives); // update display of remaining lives
+            vidasText.setText("Vidas: "+lives); // update display of remaining lives
             if (lives==0)
             { // no lives remaining
                 // add display of final score
@@ -86,5 +88,8 @@ public class Arena extends World
     {
         score += amount; // add change amount to score
         puntajeText.setText("Score: "+score); // update display of current score
+        if (score%1000 == 0) {
+            complete.play();
+        }
     }
 }
