@@ -16,6 +16,8 @@ public class Ball extends Actor
                                 
     double realX, realY, speed = 3.0; // fields for controlling movement and location of ball
 
+    int speedd = 55;
+    
     /**
      * Ball Constructor: randomly sets the initial direction of movement for the ball between 1 and 179 degrees, inclusive
      */
@@ -35,6 +37,11 @@ public class Ball extends Actor
         realY = getY();
     }
 
+    public void setSpeedd(int speedd)
+    {
+        this.speedd = speedd + 15;
+    }
+    
     /**
      * Method act: controls the movement of the ball
      */
@@ -70,6 +77,8 @@ public class Ball extends Actor
             {
                 paddlebounce.play();
                 arena.addScore(100);
+                speedd += 1;
+                Greenfoot.setSpeed(speedd);
             }
 
             // get current width (w) and height (h) of object depending on its rotation

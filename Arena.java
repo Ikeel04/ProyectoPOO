@@ -9,6 +9,7 @@ public class Arena extends World
     Text vidasText = new Text("Vidas: "+lives, 24); // displays the current lives remaining
     int score = 0; // each bounce off an object score some points
     Text puntajeText = new Text("Puntaje: "+score, 24); // displays the current score
+    int speed = 55;
     
     /**
      * Arena Constructor:  creates the bumpers, the paddle and the first ball to put in play
@@ -18,7 +19,7 @@ public class Arena extends World
         super(401, 620, 1);
         
         // set the speed of the scenario
-        Greenfoot.setSpeed(53);
+        Greenfoot.setSpeed(speed);
         
         // add the text display for current lives remaining
         addObject(vidasText, 60, 600);
@@ -52,6 +53,11 @@ public class Arena extends World
     public void started()
     {
         if (!getObjects(Score.class).isEmpty()) Greenfoot.setWorld(new Arena());
+    }
+    
+    public void setSpeed(int speed)
+    {
+        this.speed = speed;
     }
     
     /**
